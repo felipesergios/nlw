@@ -1,0 +1,39 @@
+:root{
+    --title-color:#322153;
+    --prymary-color:#34cb79;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+#page-home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+body{
+    background:silver;
+    -webkit-font-smoothing:antialiased;
+}
+a{
+    text-decoration: none;
+    transition: 400ms;
+}
+a:hover{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Ubuntu', sans-serif;
+    color:var(--title-color);
+
+}
+/**{
+    margin: 0;
+    padding: 0;
+}
+*/
+*{
+    box-sizing: border-box;
+}
+

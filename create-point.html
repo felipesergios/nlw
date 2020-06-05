@@ -1,0 +1,112 @@
+<html>
+    <!--
+        Ecoleta
+    Seu marketplace de coleta de resíduos 
+    Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente
+    -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+      
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <link rel="stylesheet" href="styles/main.css">
+      
+        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="styles/create-point.css">
+        <title>Ecoleta</title>
+    </head>
+    <body>
+        <div id="create-point">
+                <header>
+                    <img src="./assets/icones/logo.svg" alt="Ecoleta">
+                    <a href="index.html">
+                        <span></span>
+                        Voltar</a>
+                </header>
+               <form action="">
+                   <h1>Cadastre o ponto de coleta</h1>
+                   <fieldset>
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <div class="field">
+                        <label for="name">Nome da entidade</label>
+                        <input type="text" name="name" required>
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="adress">Endereço</label>
+                                <input type="text" name="adress" required>
+                            </div>
+                            <div class="field">
+                                <label for="numero">Número/Complemento</label>
+                                <input type="text" name="numero" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            
+                            <div class="field">
+                                <label for="state">Estado</label>
+                                <select name="uf" id="uf" required>
+                                    <option value="">Selecione o Estado</option>
+                                    
+                                </select>
+                                <input type="hidden" name="state" required>
+                            </div>
+                            <div class="field">
+                                <label for="cidade">Cidade</label>
+                                <select name="cidade" id="cidade" disabled required>
+                                    <option value="">Selecione a Cidade</option>
+                                    <option value="1">op</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                    </div>                    
+                   </fieldset>
+                   
+
+
+
+                   <fieldset>
+                    <legend>
+                        <h2>Itens que coleta</h2>
+                    </legend>
+                    <div class="itens-grid">
+                        <li data-id="1">
+                            <img src="./assets/icones/lampadas.svg" alt="Lâmpadas">
+                            <span>Lâmpadas</span>
+                        </li>
+                        <li data-id="2">
+                            <img src="./assets/icones/baterias.svg" alt="pilhas e baterias">
+                            <span>Pilhas e baterias</span>
+                        </li>
+                        <li data-id="3">
+                            <img src="./assets/icones/papeis-papelao.svg" alt="papel">
+                            <span>Papeis e papelão</span>
+                        </li>
+                        <li data-id="4">
+                            <img src="./assets/icones/eletronicos.svg" alt="residuos eletronicos">
+                            <span>Résiduos Eletronicos</span>
+                        </li>
+                        <li data-id="5">
+                            <img src="./assets/icones/organicos.svg" alt="Résiduos Organicos">
+                            <span>Résiduos Organicos</span>
+                        </li>
+                        <li data-id="6">
+                            <img src="./assets/icones/oleo.svg" alt="Óleo de cozinha">
+                            <span>Óleo de cozinha</span>
+                        </li>
+                        
+                    </div>
+                    <input type="hidden" name="items">
+                   </fieldset>
+                   <button type="submit">cadastrar ponto de coleta</button>
+               </form>
+
+        </div>
+       <script src="./scripts/create-point.js"></script>
+    </body>
+</html>
